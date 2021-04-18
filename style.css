@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif; 
+    height: 100vh;
+    
+}
+.container{
+    max-width: 1200px;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+     padding-left: 7em;
+    background: url('images/bg-pattern-desktop.svg') repeat left;
+}
+.img {
+ background:url('images/hero-desktop.jpg')  no-repeat center ;
+ width: 100%;
+ height:85vh;
+ background-size: cover;
+ padding-top: 42%;
+}
+ .content .logo {
+     background: url('images/logo.svg') no-repeat center;
+     height: 3em;
+    margin-top: 2em;
+    width: 10em;    
+}
+
+.content h1{
+    margin: 1.5em 0  0 ;
+    color:  hsl(0, 36%, 70%);
+    font-size: 3em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 10em;
+}
+
+.content span{
+    color: #423A3A;
+    font-weight: 400;
+}
+.content p{
+  margin: 1em 0; 
+  line-height: 1.5;
+  color: hsl(0, 36%, 70%);
+  padding-right:10em;
+}
+.content input{
+     width: 270px;
+     height: 40px;
+     padding: 1em;
+    border-radius: 3em;
+    border: 1px solid gray;
+    outline: none;
+  margin-top: 1em;
+  background: url('images/icon-error.svg') no-repeat right;
+
+}
+.content input::after{
+    content: '';
+    background: url('images/icon-error.svg]') no-repeat center;
+
+}
+.content button{
+    position: relative;
+    top: .2em;
+    left: -2.7em;
+   padding:.7em;
+   border-radius: 2em;
+    width: 5.8em;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    color: gray;
+    transition:  all .5s ease;  
+}
+.content button:focus {
+   left: -30px;
+}
+@media  screen  and (max-width:600px){
+.container{
+    padding:0 ;
+   max-width: 1200px;
+    height: 85vh; 
+    display: inline-block;
+     /* padding-left: 7em; */
+    /* background: url('images/bg-pattern-desktop.svg') repeat left; */
+}
+.content .logo {
+    background: url('images/logo.svg') no-repeat center;
+    height: 3em;
+   margin:2em;
+   width: 10em;  
+   text-align: center;  
+}
+.img{
+    display: none;
+}
+.mobile-img{
+    background:url('images/hero-mobile.jpg')  no-repeat  center;
+    width: 100%;
+    height: 35vh;
+    padding-top: 42%;
+   }
+   .content h1{
+    margin: .5em 0  0;
+    font-size: 2.5em;
+    line-height: 1.1;
+    text-align: center;
+}
+.content p{
+    margin: .5em 0;
+    text-align: center; 
+    line-height: 1.5;
+    color: hsl(0, 36%, 70%);
+    padding:  0 1.8em;
+  }
+  .content input{
+    width: 240px;
+    height: 40px;
+    padding: 1em;
+    /* position: relative;
+     left: 20%; */
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 6em;
+   border-radius: 3em;
+   border: 1px solid gray;
+   outline: none;
+ background: url('images/icon-error.svg') no-repeat right;
+
+}
+  .content button{
+    position: relative;
+    top: .2em;
+    left: -2.7em;
+   padding:.7em;
+   border-radius: 2em;
+    width: 5em;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    color: gray;
+    transition:  all .5s ease;  
+    margin-right: 20px;
+}
+}
